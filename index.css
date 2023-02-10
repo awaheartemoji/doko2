@@ -1,0 +1,159 @@
+/* Base */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.title {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.divider {
+    margin: 20px auto;
+    width: 90%;
+    height: 3px;
+    content: "";
+    background-color: var(--hi-color);
+    border-radius: 10px;
+}
+
+.test {
+
+    color: white;
+
+    color: #fff;
+    color: #ffff;
+
+    color: #ffffff;
+    color: #ffffffff;
+
+    color: hwb(0 100% 0%);
+
+    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 1);
+
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+
+
+
+
+
+/* Pages */
+.large-title {
+    margin: auto;
+
+    font-weight: 600;
+    padding: 10px;
+    font-size: 4em;
+    width: max-content;
+    border-bottom: 2px solid var(--font-color);
+    margin-bottom: 20px;
+}
+
+#page-list {
+    align-self: center;
+    max-width: 90vw;
+    display: flex;
+    width: max-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 10px;
+}
+
+.page-link {
+    text-decoration: none;
+    color: inherit;
+    max-width: 25em;
+}
+
+.page {
+
+    transition: outline 100ms ease-out;
+    justify-content: center;
+    padding: 15px;
+
+    background-color: #2f2b35;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+    word-wrap: normal;
+
+    outline-color: var(--hi-color);
+}
+
+.page:hover {
+    outline: 4px solid var(--hi-color);
+}
+
+.p-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.p-desc {
+    color: var(--font-color-2)
+}
+
+
+/* 
+.page {
+    text-decoration: none;
+    color: inherit;
+    max-width: 20em;
+}
+
+
+
+.page > * {
+    justify-content: center;
+    margin: 10px;
+    padding: 6px;
+
+    background-color: #2a2533;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+    word-wrap: normal;
+}
+
+.page > * > * {
+    margin: 0;
+    padding: 5px;
+}
+
+.p-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.3em;
+} */

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="awa">
+
+
+    <!-- Display -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>default title haha - doko</title>
+
+
+    <!-- Local CSS and JS -->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+
+    <!-- Util -->
+    <link rel="stylesheet" href="/util/util.css">
+    <script src="/util/util.js"></script>
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+<body onload="init();">
+
+    <!-- Main Container -->
+    <div id="container">
+
+        <!-- Canvas -->
+        <div id="canvas">
+            <canvas id="base" width="1000" height="1000"></canvas>
+            <canvas id="hands" width="1000" height="1000"></canvas>
+        </div>
+
+
+        <!-- Controls -->
+        <div id="controls">
+
+            <!-- Hand Controls -->
+            <div id="handcontrols">
+
+                <!-- Millisecond Hand -->
+                <div class="handcontrol" id="millisecondhand">
+                    <div class="checkbox util-checkbox"><input type="checkbox" checked="checked"><div></div></div>
+                    <div class="handcontrolright">
+                        
+                        <div class="title">Millisecond Hand</div>
+                        <div class="handcontrolbody">
+                            <div><p>Width</p><input type="range" min="5" max="20"  value="5" data-id="width"></div>
+                            <div><p>Length</p><input type="range" min="100" max="400" value="100" data-id="length"></div>
+                            <div><p>Rounded</p><div class="util-checkbox"><input type="checkbox" data-id="rounded" checked=true><div></div></div></div>
+                            <div><p>Color</p><input type="color" data-id="color" value="#f26376"></div>
+                        </div>
+                    </div>
+                </div>
+    
+
+                <!-- Second Hand -->
+                <div class="handcontrol" id="secondhand">
+                    <div class="checkbox util-checkbox"><input type="checkbox" checked="checked"><div></div></div>
+                    <div class="handcontrolright">
+
+                        <div class="title">Second Hand</div>
+                        <div class="handcontrolbody">
+                            <div><p>Width</p><input type="range" min="5" max="20" value="1" data-id="width"></div>
+                            <div><p>Length</p><input type="range" min="100" max="400" value="300" data-id="length"></div>
+                            <div><p>Rounded</p><div class="util-checkbox"><input type="checkbox" data-id="rounded" checked=true><div></div></div></div>
+                            <div><p>Color</p><input type="color" data-id="color" value="#faf061"></div>
+                        </div>
+                    </div>
+                </div>
+    
+
+                <!-- Minute Hand -->
+                <div class="handcontrol" id="minutehand">
+                    <div class="checkbox util-checkbox"><input type="checkbox" checked="checked"><div></div></div>
+                    <div class="handcontrolright">
+
+                        <div class="title">Minute Hand</div>
+                        <div class="handcontrolbody">
+                            <div><p>Width</p><input type="range" min="5" max="20" value="10" data-id="width"></div>
+                            <div><p>Length</p><input type="range" min="100" max="400" value="350" data-id="length"></div>
+                            <div><p>Rounded</p><div class="util-checkbox"><input type="checkbox" data-id="rounded" checked=true><div></div></div></div>
+                            <div><p>Color</p><input type="color" data-id="color" value="#83f796"></div>
+                        </div>
+                    </div>
+                </div>
+    
+
+                <!-- Hour Hand -->
+                <div class="handcontrol" id="hourhand">
+                    <div class="checkbox util-checkbox"><input type="checkbox" checked="checked"><div></div></div>
+                    <div class="handcontrolright">
+
+                        <div class="title">Hour Hand</div>
+                        <div class="handcontrolbody">
+                            <div><p>Width</p><input type="range" min="5" max="20" value="15" data-id="width"></div>
+                            <div><p>Length</p><input type="range" min="100" max="400" value="220" data-id="length"></div>
+                            <div><p>Rounded</p><div class="util-checkbox"><input type="checkbox" data-id="rounded" checked=true><div></div></div></div>
+                            <div><p>Color</p><input type="color" data-id="color" value="#8387f7"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Base Controls -->
+            <div id="basecontrols">
+
+            </div>
+
+        </div>
+
+        
+    </div>
+</body>
+</html>
